@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+  min-width: 600px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  nav {
+    margin-top: 20px;
+
+    ul {
+      display: flex;
+      list-style: none;
+      opacity: 0;
+      animation: 1s fadein 1s forwards;
+
+      li {
+
+        a {
+          display: inline-block;
+          font-family: 'Josefin Sans';
+          text-decoration: none;
+          color: $white;
+          // font-size: 18px;
+          font-size: 1.15rem;
+          // font-weight: 300;
+          margin: 0 15px;
+          cursor: pointer;
+          &:after {
+            display: block;
+            content: '';
+            padding-bottom: 2px;
+            border-bottom: solid 1px #24b2a6;
+            transform: scaleX(0);
+            transition: transform 100ms ease-in-out;
+          }
+
+          &:hover:after {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}

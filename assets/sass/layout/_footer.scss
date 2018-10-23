@@ -1,0 +1,22 @@
+footer {
+  position: absolute;
+  bottom: 10;
+  min-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $darkBlue;
+  margin: 0;
+  padding: 20px 0;
+
+  p {
+    color: $seafoam;
+    font-size: 15px;
+    font-size: .9rem;
+
+    span {
+      color: $seafoam;
+    }
+  }
+}

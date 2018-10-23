@@ -1,0 +1,31 @@
+#about {
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $mediumBlue;
+  // background-image: -webkit-gradient(linear, left bottom, left top, from(#2f354b), color-stop(#2c4862), color-stop(#205d74), color-stop(#117180), to(#1d8685));
+  // background-image: -webkit-linear-gradient(bottom, #2f354b, #2c4862, #205d74, #117180, #1d8685);
+  // background-image: -o-linear-gradient(bottom, #2f354b, #2c4862, #205d74, #117180, #1d8685);
+  // background-image: linear-gradient(to top, #2f354b, #2c4862, #205d74, #117180, #1d8685);
+  // background-color: $seafoam;
+  padding: 100px 0 150px;
+
+  h2 {
+    color: $seafoam;
+    font-family: 'Josefin Sans';
+    // font-size: 23px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .statement {
+    max-width: 600px;
+    // font-size: 17px;
+    font-size: 1.1rem;
+    color: $white;
+    line-height: 1.5;
+    padding: 0 30px;
+  }
+}

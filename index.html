@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Christopher Dennis</title>
+  <link rel='shortcut icon' href='./favicon_c.png'>
+  <link rel='stylesheet' href='assets/css/main.css'>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+  <script type="text/javascript" src='assets/scripts/main.js'></script>
+</head>
+
+<body>
+  <div id='home'>
+    <header class='header'>
+      <nav>
+        <ul>
+          <li><a href='#portfolio' class='scroll'>PORTFOLIO</a></li>
+          <li><a href='#about' class='scroll'>ABOUT</a></li>
+          <li><a href='https://github.com/chris-topher-d' target='_blank'>GITHUB</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class='name'>
+      <h1>Christopher Dennis</h1>
+      <h2>front-end developer</h2>
+    </div>
+  </div>
+
+  <div id='portfolio'>
+    <div id='tech-logos'>
+      <img src='./assets/img/html5-blue.png' alt='html5-logo' id='html-logo'>
+      <img src='./assets/img/css3-blue.png' alt='css3-logo' id='css3-logo'>
+      <img src='./assets/img/javascript-blue.png' alt='javascript-logo' id='javascript-logo'>
+      <img src='./assets/img/sass-blue.png' alt='sass-logo' id='sass-logo'>
+      <img src='./assets/img/jquery-blue.png' alt='jquery-logo' id='jquery-logo'>
+      <img src='./assets/img/react-blue.png' alt='react-logo' id='react-logo'>
+      <img src='./assets/img/redux-blue.png' alt='redux-logo' id='redux-logo'>
+      <img src='./assets/img/nodejs-blue.png' alt='node-logo' id='nodejs-logo'>
+      <img src='./assets/img/express-blue.png' alt='express-logo' id='express-logo'>
+      <img src='./assets/img/mongodb-blue.png' alt='mongodb-logo' id='mongodb-logo'>
+    </div>
+
+    <div class='projects'>
+      <div class='bg'>
+        <div class='project songify'>
+          <a class='title-responsive' href='https://mysterious-cove-62122.herokuapp.com/' target='_blank'><h2>Songify</h2></a>
+          <a href='https://mysterious-cove-62122.herokuapp.com/' target='_blank'>
+            <img class='project-img' src='assets/img/songify.jpg' alt='songify'>
+          </a>
+          <div class='info'>
+            <a class='title' href='https://mysterious-cove-62122.herokuapp.com/' target='_blank'><h2>Songify</h2></a>
+            <div class='tech-list'>
+              <p class='tech'>React</p>
+              <p class='tech'>React Router</p>
+              <p class='tech'>Redux</p>
+              <p class='tech'>Node</p>
+              <p class='tech'>Express</p>
+              <p class='tech'>MongoDB</p>
+              <p class='tech'>SASS</p>
+            </div>
+            <p class='description'>This music service relies on Node and MongoDB to supply React with fresh tunes.
+              Redux manages a continually changing state as the user navigates and plays music.
+              Search for songs, albums and artists and build custom playlists. Styled with SASS,
+              this full stack application is hosted on Heroku and features music from the Free Music Archive.</p>
+            <span class='git-link'>
+              <img src='assets/img/code-solid.png' alt='code-icon'>
+              <p><a href='https://github.com/chris-topher-d/mern-music-service' target='_blank'>View Source</a></p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class='bg white'>
+        <div class='project webflix'>
+          <div class='info'>
+            <a class='title' href='https://christopherdennis.me/webflix/' target='_blank'><h2>Webflix</h2></a>
+            <div class='tech-list'>
+              <p class='tech'>React</p>
+              <p class='tech'>React Router</p>
+              <p class='tech'>Redux</p>
+              <p class='tech'>SASS</p>
+            </div>
+            <p class='description'>Styled after Netflix, this site was built using React and The Movie DB API.
+              The state is managed with Redux to simplify the exchange of information between components,
+              while React Router 4 facilitates navigation between pages.</p>
+            <span class='git-link'>
+              <img src='assets/img/code-solid.png' alt='code-icon'>
+              <p><a href='https://github.com/chris-topher-d/webflix-v2' target='_blank'>View Source</a></p>
+            </span>
+          </div>
+          <a href='https://christopherdennis.me/webflix/' target='_blank'>
+            <img class='project-img' src='assets/img/webflix.jpg' alt='webflix'>
+          </a>
+          <a class='title-responsive' href='https://christopherdennis.me/webflix/' target='_blank'><h2>Webflix</h2></a>
+        </div>
+      </div>
+
+      <div class='bg'>
+        <div class='project twitch'>
+          <a class='title-responsive' href='https://christopherdennis.me/twitch-app/' target='_blank'><h2>Twitch Streamer Status</h2></a>
+          <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
+            <img class='project-img' src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
+          </a>
+          <div class='info'>
+            <a class='title' href='https://christopherdennis.me/twitch-app/' target='_blank'><h2>Twitch Streamer Status</h2></a>
+            <div class='tech-list'>
+              <p class='tech'>React</p>
+              <p class='tech'>API</p>
+              <p class='tech'>SASS</p>
+            </div>
+            <p class='description'>Keep track of your favorite twitch streamers with this React SPA.
+              An API fetch retrieves streamer information, including their current status.
+              Add and remove streamers from the list, and sort by status.</p>
+            <span class='git-link'>
+              <img src='assets/img/code-solid.png' alt='code-icon'>
+              <p><a href='https://github.com/chris-topher-d/react-twitch-app' target='_blank'>View Source</a></p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class='bg white'>
+        <div class='project weather'>
+          <div class='info'>
+            <a class='title' href='https://christopherdennis.me/weather-app/' target='_blank'><h2>React Weather Station</h2></a>
+            <div class='tech-list'>
+              <p class='tech'>React</p>
+              <p class='tech'>API</p>
+              <p class='tech'>SASS</p>
+            </div>
+            <p class='description'>This React application uses browser geolocation data to fetch local weather information from an API.
+              Styled with SASS, the app displays current weather conditions and a 5 day forecast.
+              The user can also search for conditions using a city name or zip code.</p>
+            <span class='git-link'>
+              <img src='assets/img/code-solid.png' alt='code-icon'>
+              <p><a href='https://github.com/chris-topher-d/react-weather-station' target='_blank'>View Source</a></p>
+            </span>
+          </div>
+          <a href='https://christopherdennis.me/weather-app/' target='_blank'>
+            <img class='project-img' src='assets/img/weather-app.jpg' alt='weather-app'>
+          </a>
+          <a class='title-responsive' href='https://christopherdennis.me/weather-app/' target='_blank'><h2>React Weather Station</h2></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='about'>
+    <h2>About</h2>
+    <div class='statement'>
+      <p>Hi, my name is Christopher. I enjoy learning and solving problems with code. Whether working on
+        an algorithm or a full stack application, my goal is to improve with every project.
+        I code every day, but when I'm not in front of a monitor, I can be found hiking Austin area greenbelts,
+        hanging out with friends, or digging into a book at my favorite coffee shop.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy;2018 <span>Christopher Dennis</span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+#portfolio {
+  min-width: 600px;
+  background-color: $lightGray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  #tech-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    padding: 50px 15px 30px 15px;
+
+    img {
+      height: 45px;
+      padding: 15px 25px;
+    }
+
+    #nodejs-logo {
+      height: 25px;
+    }
+
+    #express-logo {
+      height: 20px;
+    }
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .bg {
+      width: 100%;
+
+      .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 75px 0;
+        box-sizing: border-box;
+
+        .title-responsive {
+          display: none;
+          text-decoration: none;
+          padding-bottom: 25px;
+
+          h2 {
+            font-family: 'Josefin Sans';
+            font-size: 1.5rem;
+            color: $mediumBlue;
+            text-transform: uppercase;
+            border: none;
+
+            &:hover {
+              color: $seafoam;
+            }
+          }
+        }
+
+        a {
+          img {
+            width: 400px;
+            height: auto;
+            border-radius: 5px;
+            margin: 0 100px;
+            -webkit-box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.18);
+            -moz-box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.18);
+            box-shadow: 0px 3px 2px 2px rgba(0,0,0,0.18);
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          margin: 0 100px;
+
+          a {
+            text-decoration: none;
+
+            h2 {
+              font-family: 'Josefin Sans';
+              // font-size: 23px;
+              font-size: 1.5rem;
+              color: $mediumBlue;
+              text-transform: uppercase;
+              border: none;
+
+              &:hover {
+                color: $seafoam;
+              }
+            }
+          }
+
+          .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+
+            .tech {
+              color: $white;
+              font-size: .8rem;
+              font-weight: bold;
+              background-color: $seafoam;
+              padding: 3px 15px 2px;
+              border-radius: 100px;
+              margin: 3px;
+            }
+          }
+
+          p {
+            line-height: 1.5;
+          }
+
+          .git-link {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+
+            img {
+              height: 20px;
+              width: auto;
+              margin-right: 10px;
+            }
+
+            a {
+              &:link, &:visited {
+                color: blue;
+              }
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .white {
+      background-color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #portfolio {
+    .projects {
+      .bg {
+        .project {
+          .project-img {
+            margin: 0 50px;
+          }
+
+          .info {
+            margin: 0 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #portfolio {
+    .projects {
+      .bg {
+        .project {
+          .project-img {
+            width: 300px;
+            height: auto;
+          }
+
+          .info {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #portfolio {
+    .projects {
+      .bg {
+        .project {
+          flex-direction: column;
+          align-items: center;
+
+          .title {
+            display: none;
+          }
+
+          .title-responsive {
+            display: block;
+          }
+
+          .project-img {
+            width: 400px;
+            height: auto;
+            margin: 0;
+          }
+
+          .info {
+            align-items: center;
+            width: 400px;
+            margin: 10px 0 0;
+
+            .tech-list {
+              justify-content: center;
+            }
+
+            // h2 {
+            //   margin-top: 15px;
+            // }
+
+            .description {
+              text-align: center;
+              margin: 5px 0;
+            }
+          }
+        }
+
+        .webflix,
+        .weather {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}
